@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1rem;
+    color: #404040;
+    text-align: center;
+}
+
+h1{
+    font-size: 2.25rem;
+    font-weight: 300;
+    color: white;
+}
+
+h2{
+    font-size: 1.3125rem;
+    margin: 0;
+}
+
+h2 + p{
+    font-weight: 900;
+    color: #f18119;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+
+
+h1 + p{
+    color: #f18119;
+    font-weight: 900;
+    font-size: 1.3125rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.top-text{
+    color: #f18119;
+    margin: 0;
+    padding-top: 2px;
+    font-weight: 900;
+    font-size: 0.625rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    order: -1;
+    border-top: 5px solid #f18119;
+    border-image: linear-gradient(to left, #ff713b, #ffa51d) 1;
+
+}
+
+.fine-print{
+    font-size: 0.625rem;
+    letter-spacing: 1px;
+}
+
+strong{
+    font-weight: 900;
+}
+
+.intro{
+    background-image: url(pexels-igrejapreta-2491273.png);
+    background-size: cover;
+    background-position: center;
+    background-color: #404040;
+    padding: 0 0.5em 2em;
+    
+}
+
+
+.container{
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.container-intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 50vh;
+}
+
+
+/* main section */
+
+.main{
+    padding: 2em 1em;
+}
+
+
+/* =========
+   Form
+========= */
+
+.form{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+input,
+.btn{
+    width: 100%;
+}
+
+input{
+    font-family: inherit;
+    text-align: center;
+    margin-bottom: 0.75em;
+    padding: 0.25em;
+    border: 1px solid #404040;
+    border-radius: 5px;
+    transform: scale(1);
+    transition: transform 250ms;
+}
+
+input:hover,
+input:focus{
+    transform: scale(1.1);
+}
+
+.btn{
+    display: inline-block;
+    padding: 1em 1.5em;
+    font-size: 0.625rem;
+    letter-spacing: 1px;
+    font-weight: 900;
+    text-transform: uppercase;
+    border: 0;
+}
+
+.primary-btn{
+    background: linear-gradient(to left,#ff713b,#ffa51d);
+    color: white;
+    transform: scale(1);
+    transition: transform 250ms;
+}
+
+
+.primary-btn:hover,
+.primary-btn:focus{
+    transform: scale(1.1);
+}
+
+/* ============
+    Media Query
+============ */
+
+@media (min-width:500px) {
+    body{
+        font-size: 1.125rem;
+        display: flex;
+    }
+
+    h1{
+       font-size: 3.5rem;
+    }
+
+    h2,
+    h1+p{
+        font-size: 1.75rem;
+    }
+
+    .intro,
+    .main{
+        width: 50%;
+        min-height: 100vh;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container-intro{
+        height: 100%;
+    }
+}
